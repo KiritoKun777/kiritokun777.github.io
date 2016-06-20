@@ -1,0 +1,61 @@
+
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Мой сайт</title>
+	<link rel="stylesheet" href="style.css">
+	
+<script type="text/javascript">
+
+	var answer=parseInt(Math.random()*100).toFixed();
+
+	function Play(){
+
+	while(true){
+		var user=prompt('Введите число от 0 до 100. Введите q для выхода');
+
+		if(user=='q')
+			break;
+		if(user>answer){
+			alert('Слишком большое число'); 
+		} else if(user<answer){
+			alert('Слишком маленькое число');
+		} else if(user==answer){
+			alert('Вы угадали число!');
+			break;
+		}
+		
+	}	
+	}
+
+	</script>
+</head>
+<body>
+	<div id="header">
+		<a href="#">Главная</a><span>/</span>
+		<a href="puzzle.html">Загадки</a><span>/</span>
+		<a href="tttt.html">Угадайка</a><span>/</span>
+		<a href="guess.html">Угадайка мультиплеер</a><span>/</span>
+	</div>
+<div id="content">
+	<h1>Мой первый сайт</h1>
+	<div id="center">
+		<h3>Угадайка</h3>
+		<div id="box">
+		<h5>Угадайте число</h5>
+	<br></br>
+	<a href="#"  onclick="Play()">Начать</a>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+
+				Copyright 2016  <a href="https://geekbrains.ru/">GeekBrains</a>
+				</div>
+
+</body>
+</html>
